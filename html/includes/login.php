@@ -1,5 +1,8 @@
 <?php
 
+session_start();
+
+
 /*Checks that button is actually clicked*/
 if(isset($_POST['submit'])) {
      require_once ("../dbh.php");
@@ -26,9 +29,11 @@ if(isset($_POST['submit'])) {
 
 			if($row["password"]==$pwd) {
 				
-			 header("Location: ../index.php?login=YOURELOGGEDIN");
-               		 exit();
-		
+				$_SESSION['sesh_id']=$row['uid'];
+				$_SESSION['sesh_username']=$row['username'];
+				header("Location: ../index.php?login=YOURELOGGEDIN");
+
+				exit();
 
 			} else {
 

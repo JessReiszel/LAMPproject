@@ -1,7 +1,7 @@
 <?php
 
 $dbServername="localhost";
-$dbUsername="root";
+$dbUsername="webdata";
 $dbPassword="creative";
 $dbName="creativegamesinc";
 
