@@ -31,6 +31,7 @@ if(isset($_POST['submit'])) {
 				
 				$_SESSION['sesh_id']=$row['uid'];
 				$_SESSION['sesh_username']=$row['username'];
+				$_SESSION['sesh_usertype']=$row['usertype'];
 				header("Location: ../index.php?login=YOURELOGGEDIN");
 
 				exit();
