@@ -16,7 +16,7 @@ session_start();
         <nav>
                 <div class="main-wrapper">
                         <ul>
-                                <li> <a href="index.php"> Home</a></li>
+                                <li> <a href="../index.php"> Home</a></li>
                         </ul>
                         <div class="nav-login">
 			<?php
@@ -26,7 +26,7 @@ session_start();
                                </form>';
    
 		          } else {
-			     echo' <form action="includes/login.php" method="POST">
+			     echo' <form action="../includes/login.php" method="POST">
                                <input type="text" name="username" placeholder="Username"><input type="password" name="password" placeholder="Password">
                                 <button type="submit" name="submit">Login </button>
                                 </form>';
