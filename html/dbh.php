@@ -6,13 +6,27 @@ $dbPassword="creative";
 $dbName="creativegamesinc";
 
 
-$conn= mysqli_connect($dbServername,$dbUsername,$dbPassword,$dbName);
+$conn= new mysqli($dbServername,$dbUsername,$dbPassword,$dbName);
 
 
-if(!$conn) {
-	die("Connection FAILED: " . mysql_connect_error()) ;
-
+if($conn->errno !=0) {
+	echo "Connection to database FAILED: " .$conn->error.PHP_EOL ;
+	exit(0);
 } 
 echo "Connection SUCCESS";
+
+/*
+$sql= "select * from venue;" ;
+$response=$conn->query($sql);
+
+
+while($result=$response->fetch_assoc())
+{
+	var_dump($result);
+	echo PHP_EOL;
+
+}
+*/
+
 
 ?>

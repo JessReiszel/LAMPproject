@@ -6,7 +6,7 @@ session_start();
 <html>
 <head>
         <title></title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="../style.css">
 
 </head>
 <body>
@@ -21,7 +21,7 @@ session_start();
                         <div class="nav-login">
 			<?php
 		          if(isset($_SESSION['sesh_username'])) {
-			   echo' <form action="includes/logout.php" method="POST">
+			   echo' <form action="../includes/logout.php" method="POST">
                                   <button type="submit" name="submit">Logout</button>
                                </form>';
    

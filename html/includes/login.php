@@ -27,14 +27,25 @@ if(isset($_POST['submit'])) {
 	     } else {
 		  if($row=mysqli_fetch_assoc($result)) {
 
-			if($row["password"]==$pwd) {
+			if($row['password']==$pwd) {
 				
 				$_SESSION['sesh_id']=$row['uid'];
 				$_SESSION['sesh_username']=$row['username'];
 				$_SESSION['sesh_usertype']=$row['usertype'];
-				header("Location: ../index.php?login=YOURELOGGEDIN");
 
+				if($_SESSION['sesh_usertype']=="admin") {
+
+				header("Location: ../admins/adminhome.php?login=YOURELOGGEDIN");
 				exit();
+
+				}
+
+			else {
+				header("Location: ../index.php?login=YOURELOGGEDIN");
+                                exit();
+
+
+			}
 
 			} else {
 
