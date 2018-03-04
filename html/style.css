@@ -247,6 +247,12 @@ header .nav-login a {
   border-radius:15px;
 }
 
+.db-content-area {
+	width:100%;
+	height:300px;
+	color:#000;
+
+}
 
 .button {
     background-color: #587B7F;
