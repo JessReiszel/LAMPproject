@@ -6,9 +6,9 @@ The GUI contains a login for users/admins who are then directed to content based
 
 ## Individual Deliverables:
 
-### Admin Screen:
+### Admin screen:
 * View schedule of events
-  * Event Details
+  * Event details
 * Add an event
 * View list of equipment
   * View equipment use schedule
