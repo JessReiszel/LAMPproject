@@ -1,6 +1,7 @@
 # LAMPproject
 
 This project serves as a web interface to a backend database of Creative Games Inc.'s events and inventory.
+The GUI contains a login for users/admins who are then directed to content based on their usertype.
 
 
 ## Individual Deliverables:
