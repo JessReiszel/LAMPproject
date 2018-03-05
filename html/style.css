@@ -250,9 +250,24 @@ header .nav-login a {
 .db-content-area {
 	width:100%;
 	height:300px;
-	color:#000;
+	font-size:10pt;
+	text-align:center;
 
 }
+
+.db-content-area table {
+	margin:auto;
+	line-height:11pt;
+
+}
+
+.db-content-area td {
+
+	padding:20px;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
 
 .button {
     background-color: #587B7F;
