@@ -62,8 +62,10 @@
  
  
 		else {
-		
-		echo"Error: Admin user- YOU SHOULD BE ON ADMIN PAGE"; }
+			header("Location: ../admins/adminhome.php?login=yourebackyo");
+                                exit();
+			
+			echo"Error: admin user- should be on user page";}
 		}
 
 		?>

@@ -14,6 +14,6 @@ if($conn->errno !=0) {
 	exit(0);
 } 
 
-echo "Connection SUCCESS";
+//echo "Connection SUCCESS";
 
 ?>
