@@ -18,7 +18,7 @@
                           });
 
                          $("#b2").click(function() {
-                                $(".db-content-area").load("includes/viewpackages.php", {btnclick: "b2"});                             
+                                $(".db-content-area").load("includes/userpacks.php", {btnclick: "b2"});                             
                           });
 
 
@@ -42,7 +42,8 @@
 	   if(isset($_SESSION['sesh_username'])) {
 		if($_SESSION['sesh_usertype']!=="admin") {
 		?>
-	<h2>WELCOME USER: <?php echo $_SESSION['sesh_username']; ?> </h2>
+	<h3>WELCOME USER: <?php echo $_SESSION['sesh_username']; ?> </h3>
+	<br><br><br>
 
 
 		<div class="flex-container">
@@ -53,7 +54,12 @@
 
 			 </div>
 		<div style="flex-grow: 5">
-		<div class="db-content-area"> CONTENT </div>
+		<div class="db-content-area"> 
+
+
+			
+
+				 </div>
 		
 		</div>
 		</div>

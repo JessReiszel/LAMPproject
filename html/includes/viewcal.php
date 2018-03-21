@@ -1,24 +1,31 @@
 <?php
-
 	include_once '../dbh.php';
-
 	if(isset($_POST['btnclick']) && $_POST['btnclick']=='b1')
 	{
 
-		echo 'view calendar';
- 	 /*
-		$sql= '';
+		
+		$sql='select * from eventdatesonly;';
 		$response=$conn->query($sql);
 
+		
+		while($row=mysqli_fetch_assoc($response)) {
+			$rows[]=$row;
+		}	
 
 
-		while($result=$response->fetch_assoc())
-		{
-			var_dump($result);
-			echo PHP_EOL;
+		echo '<table class="packtable"><tr><th>Dates already booked: </th></tr>';
+		foreach($rows as $row) 
+                {
+                        echo'<tr><td>' . $row['eventdate'] . '</td></tr>';
+	
+                }
 
-		}
-	  */
+		   echo '</table>';
+
+		 
+
+		
 	}
+
 ?>
 
