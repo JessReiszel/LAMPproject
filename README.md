@@ -21,5 +21,6 @@ The GUI contains a login for users/admins who are then directed to content based
 * Submit a request for consultation / booking
 
 
-Admin: amaruo ampassword
-User: guesttest gpassword
+#### Logins
+##### Admin: amaruo ampassword
+##### User: guesttest gpassword
