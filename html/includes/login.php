@@ -27,6 +27,16 @@ if(isset($_POST['submit'])) {
 	     } else {
 		  if($row=mysqli_fetch_assoc($result)) {
 
+
+	/*		$hashedpwdcheck= password_verify($pwd, $row['password']);
+				if ($hashedpwdcheck == false) {
+					header("Location: ../index.php?login=error");
+					exit();
+				}
+				elseif($hashedpwdcheck==true) {
+					
+	*/
+
 			if($row['password']==$pwd) {
 				
 				$_SESSION['sesh_id']=$row['uid'];

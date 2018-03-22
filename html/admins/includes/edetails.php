@@ -10,7 +10,7 @@
 			
 			 <form action="includes/eresults.php" method="POST">
                                <input type="text" name="enamesearch" placeholder="Enter event ID or name">
-                                <button type="submit" name="submit">Display Event Details</button>
+                                <button type="submit" name="eventsearch">Display Event Details</button>
                                 </form>';
 
 	}
