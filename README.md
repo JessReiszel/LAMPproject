@@ -22,5 +22,5 @@ The GUI contains a login for users/admins who are then directed to content based
 
 
 #### Logins
-##### Admin: amaruo ampassword
-##### User: guesttest gpassword
+* Admin: amaruo ampassword
+* User: guesttest gpassword
