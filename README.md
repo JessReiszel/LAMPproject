@@ -20,3 +20,7 @@ The GUI contains a login for users/admins who are then directed to content based
 * View list of service packages
 * Submit a request for consultation / booking
 
+
+#### Logins
+* Admin: amaruo ampassword
+* User: guesttest gpassword
